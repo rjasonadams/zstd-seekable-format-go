@@ -12,7 +12,7 @@ import (
 	"github.com/google/btree"
 	"go.uber.org/atomic"
 
-	"github.com/SaveTheRbtz/zstd-seekable-format-go/pkg/env"
+	"github.com/rjasonadams/zstd-seekable-format-go/pkg/env"
 )
 
 type cachedFrame struct {

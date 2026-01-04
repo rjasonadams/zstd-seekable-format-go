@@ -3,7 +3,7 @@ package seekable
 import (
 	"fmt"
 
-	"github.com/SaveTheRbtz/zstd-seekable-format-go/pkg/env"
+	"github.com/rjasonadams/zstd-seekable-format-go/pkg/env"
 )
 
 type wOption func(*writerImpl) error

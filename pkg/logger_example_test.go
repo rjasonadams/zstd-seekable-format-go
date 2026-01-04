@@ -3,7 +3,7 @@ package seekable_test
 import (
 	"fmt"
 
-	seekable "github.com/SaveTheRbtz/zstd-seekable-format-go/pkg"
+	seekable "github.com/rjasonadams/zstd-seekable-format-go/pkg"
 )
 
 // ZapLogger demonstrates how to adapt zap.Logger to the seekable.Logger interface.

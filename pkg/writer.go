@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/SaveTheRbtz/zstd-seekable-format-go/pkg/env"
+	"github.com/rjasonadams/zstd-seekable-format-go/pkg/env"
 )
 
 var errWriterClosed = errors.New("writer is closed")

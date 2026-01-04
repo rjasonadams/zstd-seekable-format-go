@@ -1,4 +1,4 @@
-module github.com/SaveTheRbtz/zstd-seekable-format-go/pkg
+module github.com/rjasonadams/zstd-seekable-format-go/pkg
 
 go 1.24.4
 

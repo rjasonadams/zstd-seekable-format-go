@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/SaveTheRbtz/zstd-seekable-format-go/pkg/env"
+	"github.com/rjasonadams/zstd-seekable-format-go/pkg/env"
 )
 
 const sourceString = "testtest2"
