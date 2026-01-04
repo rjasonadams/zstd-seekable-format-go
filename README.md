@@ -1,5 +1,8 @@
   [![License][license-img]][license] [![GoDoc][doc-img]][doc] [![Build Status][ci-img]][ci] [![Go Report][report-img]][report]
 # ZSTD seekable compression format implementation in Go
+
+> **Note**: This is a fork of [SaveTheRbtz/zstd-seekable-format-go](https://github.com/SaveTheRbtz/zstd-seekable-format-go) with a pluggable logging interface to remove the zap dependency.
+
 [Seekable ZSTD compression format](https://github.com/facebook/zstd/blob/dev/contrib/seekable_format/zstd_seekable_compression_format.md) implemented in Golang.
 
 This library provides a random access reader (using uncompressed file offsets) for ZSTD-compressed streams.  This can be used for creating transparent compression layers.  Coupled with Content Defined Chunking (CDC) it can also be used as a robust de-duplication layer.
