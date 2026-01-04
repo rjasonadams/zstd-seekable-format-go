@@ -1,8 +1,6 @@
 package env
 
-import (
-	"go.uber.org/zap/zapcore"
-)
+import "fmt"
 
 // FrameOffsetEntry is the post-processed view of the Seek_Table_Entries suitable for indexing.
 type FrameOffsetEntry struct {
@@ -22,15 +20,9 @@ type FrameOffsetEntry struct {
 	Checksum uint32
 }
 
-func (o *FrameOffsetEntry) MarshalLogObject(enc zapcore.ObjectEncoder) error {
-	enc.AddInt64("ID", o.ID)
-	enc.AddUint64("CompOffset", o.CompOffset)
-	enc.AddUint64("DecompOffset", o.DecompOffset)
-	enc.AddUint32("CompSize", o.CompSize)
-	enc.AddUint32("DecompSize", o.DecompSize)
-	enc.AddUint32("Checksum", o.Checksum)
-
-	return nil
+func (o *FrameOffsetEntry) String() string {
+	return fmt.Sprintf("ID=%d CompOffset=%d DecompOffset=%d CompSize=%d DecompSize=%d Checksum=0x%X",
+		o.ID, o.CompOffset, o.DecompOffset, o.CompSize, o.DecompSize, o.Checksum)
 }
 
 func Less(a, b *FrameOffsetEntry) bool {
